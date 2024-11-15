@@ -1,0 +1,46 @@
+/* Add this CSS for the scroll-to-top button */
+.custom-btn {
+    position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 20px;
+    background-color: #21ebff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background-color: transparent;
+    color: #21ebff;
+  }
+  
+  /* Optional: Add a glitch effect to the button */
+  .custom-btn:before,
+  .custom-btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    background: #21ebff;
+    width: 0;
+    box-shadow: 0 0 5px #21ebff, 0 0 5px #21ebff inset;
+    transition: 400ms ease all;
+  }
+  
+  .custom-btn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .custom-btn:hover:before,
+  .custom-btn:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+  

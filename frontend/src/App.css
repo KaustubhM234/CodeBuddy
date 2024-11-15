@@ -1,0 +1,77 @@
+.offcanvas-bottom {
+  top: auto;
+  bottom: 0;
+  resize: vertical;
+  overflow-y: auto;
+}
+
+.resizable-header {
+  cursor: ns-resize; /* Set resize cursor on the header */
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.output-container {
+ 
+   /* Adjust the maximum height as needed */
+  overflow-y: auto;
+  background-color:#000000;
+  color:aliceblue;
+  font-weight: bold;
+  height:100%;
+}
+.output-section{
+
+  
+  border: 1px solid #000000;
+  padding: 20px;
+  height: 100%;
+  
+} 
+/* .offcanvas-bottom.show {
+  transform: translateY(0%);
+}
+
+.offcanvas-bottom {
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.offcanvas-body-resizable {
+  overflow-y: auto;
+  resize: vertical;
+} */

@@ -1,0 +1,182 @@
+/* YourComponent.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Onest', sans-serif;
+}
+
+.form-container {
+  width: 100vw;
+  height: 125vh;
+  background:linear-gradient(to right, #176225, #eff3f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-files-container {
+  background-color: #f7fff7;
+width: 630px!important;
+padding: 30px 60px;
+border-radius: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
+}
+
+.drag-file-area {
+  border: 2px dashed #03217b;
+  border-radius: 40px;
+  margin: 10px 0 15px;
+  padding: 30px 50px;
+  width: 470px;
+  text-align: center;
+}
+
+.drag-file-area .upload-icon {
+  font-size: 50px;
+  display: block; /* Ensure the icon is centered */
+  margin: 0 auto;
+}
+
+.drag-file-area h3 {
+  font-size: 21px;
+  margin: 15px 0;
+}
+
+.drag-file-area label {
+  font-size: 19px;
+  display: inline;
+}
+
+.drag-file-area label .browse-files-text {
+  color: #191978;
+  font-weight: bold;
+  font-family:'Onest';
+  cursor: pointer;
+}
+
+.browse-files span {
+  position: relative;
+  top: -25px;
+  display: block; /* Ensure proper alignment */
+}
+
+.default-file-input {
+  opacity: 0;
+}
+
+.cannot-upload-message {
+  background-color: #ffc6c4;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px 10px 5px 30px;
+  border-radius: 5px;
+  color: #BB0000;
+  display: none;
+}
+
+/* Add animation properties for fadeIn */
+.cannot-upload-message.visible {
+  display: flex;
+  animation: fadeIn linear 1.5s;
+}
+
+/* Add missing styles for uploaded file block */
+.file-block {
+  color: #f7fff7;
+  background-color: #0a038b;
+  transition: all 1s;
+  width: 390px;
+  position: relative;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.file-icon {
+  margin-right: 10px;
+}
+
+.file-name,
+.file-size {
+  padding: 0 3px;
+}
+
+.remove-file-icon {
+  cursor: pointer;
+}
+
+.progress-bar {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 4.5%;
+  width: 0;
+  height: 5px;
+  border-radius: 25px;
+  background-color: #4BB543;
+}
+
+.upload-button {
+  font-family: 'Onest';
+  background-color: #051b86;
+  color: #f7fff7;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 7.5px 50px;
+  cursor: pointer;
+}
+
+.box-container {
+  height: 300px; /* Adjust the height as needed */
+  background-color: #fff; /* Set the background color for the container */
+  border: 1px solid #ccc; /* Add a border to the container for better visualization */
+  margin: 10px; /* Optional: Add margin for spacing between boxes */
+  overflow: hidden; /* Hide content that overflows */
+}
+
+.scrollable-box {
+  max-height: 100%; /* Allow the box to expand up to the container's height */
+  overflow-y: auto; /* Enable scroll for the box */
+  padding: 10px; /* Optional: Add padding for better spacing */
+}
+
+.row {
+  display: flex; /* Use Flexbox to create a row layout */
+}
+
+.col-lg-6,
+.col-md-12,
+.col-sm-12 {
+  flex: 1; /* Each column takes an equal portion of the available space */
+}
+
+.scrollable-box {
+  max-height: 309px;
+  background-color: #111;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
